@@ -4,6 +4,8 @@
 
 - ### 🗝 Algorithm
 
+- [Insertion Sort](./Algorithm/InsertionSort.md)
+
   <br>
 
 - ### ⛓ Data Structure

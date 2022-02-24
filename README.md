@@ -4,7 +4,7 @@
 
 - ### 🗝 Algorithm
 
-- [Insertion Sort](./Algorithm/InsertionSort.md)
+  - [Insertion Sort](./Algorithm/InsertionSort.md)
 
   <br>
 

@@ -18,7 +18,8 @@
 해시 테이블은 Key 와 Value 의 쌍으로 데이터를 저장하는 자료구조 이다. 
 언어에 따라 HashMap (Java)이라고도 불리며, 파이썬의 Dictionary 또한 HashTable로 구현되어있다.
 
-![image](https://user-images.githubusercontent.com/64348346/156493655-c7774090-9fe4-4203-91d7-6a07dc3d94a2.png)
+
+<img src="https://user-images.githubusercontent.com/64348346/156493655-c7774090-9fe4-4203-91d7-6a07dc3d94a2.png" width="500" />
 
 ## Hash 함수란? Hashing 이란? 
 해시함수(hash function)란 데이터의 효율적 관리위해 임의의 길이의 데이터를 고정된 길이의 데이터로 매핑하는 함수다.
@@ -41,9 +42,12 @@
     - 445 % 3 = 1
     - 321 % 3 = 0
     - 306 % 3 = 0
-    ![image](https://user-images.githubusercontent.com/64348346/156969408-7f12e8bc-0bcf-4276-915d-049a6d3393bf.png)
+    
+<img src="https://user-images.githubusercontent.com/64348346/156969408-7f12e8bc-0bcf-4276-915d-049a6d3393bf.png" width="500" />
+
 4. 배열방에 할당한다. index가 중복 되는 value는 linked list로 연결시킨다.
-![image](https://user-images.githubusercontent.com/64348346/156969491-b09eebb6-9bea-4c60-94b5-e41e4a46d170.png)
+
+<img src="https://user-images.githubusercontent.com/64348346/156969491-b09eebb6-9bea-4c60-94b5-e41e4a46d170.png" width="500" />
 
 ### 정리 🚩 
 - 검색 요청이 들어오면 Hash 함수를 통해 HashCode를 만든다.
@@ -75,17 +79,26 @@ Array와 달리 저장된 요소를 순서대로 찾는게 아니고 Key값을 �
 Collision 방지 위해 좋은 해시 알고리즘이 필요하다.
 
 # 한계 극복 방안
-1. Chaining
+### 1. Chaining
 value가 충돌 됐을 때 linked list로 value를 연결시킨다. 
-![image](https://user-images.githubusercontent.com/64348346/156964317-938c4ef3-a65d-49d7-88ed-b06770807fc7.png)
 
-2. Linear Proning (선형탐사)
+
+<img src="https://user-images.githubusercontent.com/64348346/156964317-938c4ef3-a65d-49d7-88ed-b06770807fc7.png" width="500" />
+
+
+</br>
+
+### 2. Linear Proning (선형탐사)
 이미 만들어 놓은 buket을 먼저 소모한다. 
-![image](https://user-images.githubusercontent.com/64348346/156964739-10f31e6e-ffb9-433d-b9e5-49199b223b47.png)
 
-3. Table Resizing
+<br/>
+<img src="https://user-images.githubusercontent.com/64348346/156964739-10f31e6e-ffb9-433d-b9e5-49199b223b47.png" width="500" />
+
+### 3. Table Resizing
 table길이를 늘인다.
-![image](https://user-images.githubusercontent.com/64348346/156964858-a92b462e-b39c-4161-b495-df6f921703b0.png)
+
+<img src="https://user-images.githubusercontent.com/64348346/156964858-a92b462e-b39c-4161-b495-df6f921703b0.png" width="500" />
+
 
 # 구현 예제
 [HashTable.java](./HashTable.java)

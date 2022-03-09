@@ -5,6 +5,7 @@
 - ### 🗝 Algorithm
 
   - [Insertion Sort](./Algorithm/InsertionSort.md)
+  - [HashTable](./Algorithm/HashTable.md)
 
   <br>
 
